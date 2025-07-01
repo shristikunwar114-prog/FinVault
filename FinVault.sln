@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinVault.API", "FinVault.API\FinVault.API.csproj", "{1202E901-352B-4E54-95CC-31EE587CA772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinVault.Tests", "FinVault.Tests\FinVault.Tests.csproj", "{E3F13B93-1FC7-4D08-A9E7-FCE28A1042A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1202E901-352B-4E54-95CC-31EE587CA772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1202E901-352B-4E54-95CC-31EE587CA772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1202E901-352B-4E54-95CC-31EE587CA772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1202E901-352B-4E54-95CC-31EE587CA772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F13B93-1FC7-4D08-A9E7-FCE28A1042A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F13B93-1FC7-4D08-A9E7-FCE28A1042A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F13B93-1FC7-4D08-A9E7-FCE28A1042A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F13B93-1FC7-4D08-A9E7-FCE28A1042A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# dotnet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+
+# Environment
+.env
+.env.*
+appsettings.Development.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI tooling — do not commit
+CLAUDE.md
+.claude/
+.cursor/
+.cursorignore
+.copilot/
+.github/copilot-instructions.md
+*.aiprompt
