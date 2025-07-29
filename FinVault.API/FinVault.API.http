@@ -1,0 +1,94 @@
+@host = http://localhost:5212
+@token = YOUR_JWT_TOKEN_HERE
+
+### register
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane@example.com",
+  "password": "SecurePass1!",
+  "phoneNumber": "1234567890",
+  "dateOfBirth": "1995-06-15",
+  "address": "123 Main St"
+}
+
+### login
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "jane@example.com",
+  "password": "SecurePass1!"
+}
+
+### get profile
+GET {{host}}/api/users/me
+Authorization: Bearer {{token}}
+
+### create checking account
+POST {{host}}/api/accounts
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "type": 0,
+  "currency": "USD",
+  "initialDeposit": 500
+}
+
+### list accounts
+GET {{host}}/api/accounts
+Authorization: Bearer {{token}}
+
+### deposit
+POST {{host}}/api/accounts/1/deposit
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "amount": 1000,
+  "description": "Salary",
+  "category": "Income"
+}
+
+### withdraw
+POST {{host}}/api/accounts/1/withdraw
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "amount": 200,
+  "description": "Groceries",
+  "category": "Food"
+}
+
+### transfer
+POST {{host}}/api/transfers
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "fromAccountId": 1,
+  "toAccountId": 2,
+  "amount": 300,
+  "description": "Savings transfer"
+}
+
+### transaction history
+GET {{host}}/api/accounts/1/transactions?page=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### spending analytics
+GET {{host}}/api/accounts/1/analytics?year=2025&month=7
+Authorization: Bearer {{token}}
+
+### monthly statement
+GET {{host}}/api/accounts/1/statement?year=2025&month=7
+Authorization: Bearer {{token}}
+
+### notifications
+GET {{host}}/api/notifications
+Authorization: Bearer {{token}}
